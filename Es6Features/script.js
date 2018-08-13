@@ -1,5 +1,5 @@
 
-// "Const Key Word"
+// "Const Key Word":
 
 window.onload = function() {
 
@@ -15,7 +15,7 @@ window.onload = function() {
 }
 
 
-// let Keyword 
+// let Keyword :
 
 
 
@@ -29,7 +29,7 @@ window.onload = function(){
 }
 
 
-// Default parameters 
+// Default parameters :
 
 function log(num =20){
 
@@ -44,7 +44,7 @@ function person(name="srikanth", age=25 , nationality="indian"){
 
 person("bharath",25,"indian");// over riding the default parameter values
 
-// Spread Operator 
+// Spread Operator :
 
 // It is basically take an array and split into individual elements 
 
@@ -66,3 +66,62 @@ function add(x,y,z){
   return x+y+z;
 }
 console.log(add(...arr)); //spread operator takes the arr and split into the individuals then add it .
+
+
+// Template Strings:
+
+
+function loginfo(name , age ){
+
+  console.log(`my name is ${name} and iam  ${age} years old`);
+
+}        
+
+loginfo("srikanth",25);
+
+//Object Literals :
+var name = "srikanth";
+
+var age = 25;
+
+var person = {
+       name,age,
+       getFullDetails(country) {
+        console.log(`The person name is ${name} and his age is ${age} from ${country}`);
+   }
+};
+
+console.log( person.getFullDetails("india"));
+
+
+//New String Methods :
+
+/* NEW STRING METHODS 
+   -repeat
+   -startswith
+   -endsWith
+   -includes
+*/
+
+//repeat
+var str ="srikanth ";
+
+console.log(str.repeat(10));
+
+//startsWith && endsWith
+
+var str1 = "Bonjour";
+
+console.log(str1.startsWith("Bon"));
+
+console.log(str1.startsWith("jour","3"));
+
+console.log(str1.endsWith("r"));
+
+console.log(str1.endsWith("n",str1.length-4));
+
+
+//includes
+
+console.log(str1.includes("Bo"));
+
